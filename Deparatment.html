@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: content-box;
+    }
+    /* create two equal columns that floats next to each other*/
+    .column{
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px;
+    }
+    /* clear floats after the colulmns*/
+    .row::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+<body>
+    <div class="row">
+        <div class="column 1">
+            <h4>S.NO</h4>
+            <p></p>
+            <div class="row">
+             <div class="column 2">
+              <h4>Project file</h4> 
+              <p></p>
+              <div class="row">
+                <div class="column 3">
+                    <h4>Developers</h4>
+                    <p></p>
+               <div class="row">
+                <div class="column 4">
+                    <h4>Department</h4>
+                    <p></p>
+                <div class="row">
+                    <div class="column 5">
+                    <h4>Project Description</h4>
+                    <p></p>
+                <div class="row">
+                    <div class="column 6">
+                        <h4>Live link(if any)</h4>
+                        <p></p>
+                    </div>
+                </div>
+                    </div>
+                </div>    
+                </div>
+               </div>     
+                </div>
+              </div> 
+             </div>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
